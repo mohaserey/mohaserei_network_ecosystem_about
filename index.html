@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="km" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>បណ្តាញមហាសិរី - Mohaserei Network (MSN) | អំពីយើង (About)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Kantumruy+Pro:wght@300;400;500;600;700&family=Moul&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --msn-navy: #060b16;
+      --msn-slate: #0d1629;
+      --msn-card: #111d36;
+      --msn-gold: #d4af37;
+      --msn-gold-bright: #fde68a;
+      --msn-emerald: #10b981;
+      --msn-teal: #14b8a6;
+    }
+
+    body {
+      font-family: 'Kantumruy Pro', 'Inter', sans-serif;
+      background-color: var(--msn-navy);
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    .font-moul {
+      font-family: 'Moul', serif;
+    }
+
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .hero-canvas {
+      background:
+        radial-gradient(circle at 14% 18%, rgba(212, 175, 55, 0.16), transparent 42%),
+        radial-gradient(circle at 86% 16%, rgba(16, 185, 129, 0.14), transparent 42%),
+        radial-gradient(circle at 50% 92%, rgba(20, 184, 166, 0.11), transparent 48%),
+        linear-gradient(180deg, #050913 0%, #0b1426 60%, #060b16 100%);
+    }
+
+    .gold-text {
+      background: linear-gradient(135deg, #fde68a 0%, #eab308 48%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .emerald-gold-text {
+      background: linear-gradient(135deg, #6ee7b7 0%, #fde68a 55%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass-panel {
+      background: rgba(17, 29, 54, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      box-shadow: 0 14px 36px -12px rgba(0, 0, 0, 0.6);
+    }
+
+    .glass-card {
+      background: rgba(13, 22, 41, 0.84);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      transition: all 0.25s ease;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(212, 175, 55, 0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px -12px rgba(16, 185, 129, 0.12);
+    }
+
+    .pillar-tab-active {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.22), rgba(212, 175, 55, 0.22));
+      border-color: #eab308 !important;
+      color: #fde68a !important;
+      box-shadow: 0 8px 24px -8px rgba(212, 175, 55, 0.35);
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #060b16;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #243452;
+      border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d4af37;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-500/30 selection:text-amber-200">
+
+  <!-- ================= 1. TOP HEADER ================= -->
+  <header class="sticky top-0 z-50 border-b border-amber-500/20 bg-[#060b16]/92 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between min-h-[4.5rem] py-2 gap-3">
+        <!-- Brand Logo & Official Title -->
+        <a href="#top" class="flex items-center gap-3 min-w-0 group">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-emerald-500 p-0.5 shrink-0 shadow-lg shadow-amber-500/15">
+            <div class="w-full h-full rounded-[10px] bg-[#091224] overflow-hidden flex items-center justify-center relative">
+              <img
+                src="mohaserey.jpg"
+                alt="Mohaserei Network Logo"
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'; document.getElementById('logoFallbackBadge').classList.remove('hidden');"
+              />
+              <span id="logoFallbackBadge" class="hidden font-moul text-amber-300 text-xs">MSN</span>
+            </div>
+          </div>
+
+          <div class="min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <h1 class="font-bold text-white text-sm sm:text-base lg:text-lg leading-snug truncate" data-i18n="header_title">
+                បណ្តាញមហាសិរី - Mohaserei Network (MSN) | អំពីយើង (About)
+              </h1>
+              <span class="hidden md:inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-mono-code font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                2026–2052 • V1.0–V2.0
+              </span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-amber-300/85 truncate" data-i18n="header_subtitle">
+              ប្រព័ន្ធសេដ្ឋកិច្ចឌីជីថលផ្អែកលើការចូលរួម • Participation-Based Digital Economic Ecosystem
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden xl:flex items-center gap-5 text-xs font-semibold text-slate-300">
+          <a href="#vision-constitution" class="hover:text-amber-300 transition" data-i18n="nav_vision">ចក្ខុវិស័យ & រដ្ឋធម្មនុញ្ញ</a>
+          <a href="#governance-network" class="hover:text-amber-300 transition" data-i18n="nav_gov">អភិបាលកិច្ច & បណ្តាញជាតិ</a>
+          <a href="#capitals-participation" class="hover:text-amber-300 transition" data-i18n="nav_capitals">ធនធាន ៥ & ការចូលរួម ៥</a>
+          <a href="#interactive-explorer" class="hover:text-amber-300 transition" data-i18n="nav_explorer">ស្វែងយល់លម្អិត</a>
+        </nav>
+
+        <!-- Bilingual Language Toggle -->
+        <button
+          type="button"
+          onclick="toggleLanguage()"
+          id="langToggleBtn"
+          aria-label="Toggle Language Khmer and English"
+          class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-extrabold bg-gradient-to-r from-amber-400 via-amber-500 to-emerald-400 hover:brightness-110 text-slate-950 shadow-md shadow-amber-500/20 transition cursor-pointer shrink-0"
+        >
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+          </svg>
+          <span id="langToggleLabel">English</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO & CORE MESSAGE ("SAVE / INVEST / RETURN") ================= -->
+  <section id="top" class="hero-canvas border-b border-amber-500/15 py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span data-i18n="hero_badge">រៀបចំដោយ៖ ឯកឧត្តម មេណ្ឌ មុនី • អគ្គស្ថាបនិក និងប្រធានក្រុមប្រឹក្សាភិបាល MSN</span>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+            <span class="block text-sm sm:text-base font-bold text-emerald-300 tracking-wide mb-2" data-i18n="hero_kicker">
+              MSN CORE MEMBER & POINT SYSTEM (V1.0) • ECOSYSTEM (2027–2052) • SYSTEM UPDATE (2026–2052)
+            </span>
+            <span class="emerald-gold-text" data-i18n="hero_main_title">
+              បណ្តាញមហាសិរី និងប្រព័ន្ធអេកូឡូស៊ីសេដ្ឋកិច្ចឌីជីថល
+            </span>
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed" data-i18n="hero_summary">
+            មនុស្សគ្រប់រូបមានតម្លៃសេដ្ឋកិច្ច។ រាល់ការចូលរួមពិតប្រាកដត្រូវបានវាស់វែង កត់ត្រា និងបម្លែងទៅជាពិន្ទុ តំណែង ទ្រព្យសកម្ម និងចំណែកផលប្រយោជន៍រួមប្រកបដោយតម្លាភាព គណនេយ្យភាព និងសវនកម្ម។
+          </p>
+
+          <!-- Core Message: Save / Invest / Return -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-1">
+            <div class="glass-card rounded-2xl p-4 border-l-4 border-l-emerald-400">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-mono-code font-bold text-emerald-400">01 • SAVE</span>
+                <span class="text-xs font-bold text-emerald-300">សន្សំ</span>
+              </div>
+              <h3 class="font-bold text-white text-base mt-1" data-i18n="msg_save_title">Save / សន្សំ</h3>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed" data-i18n="msg_save_desc">
+                កសាងទម្លាប់សន្សំជាប្រព័ន្ធ និងកំណត់ត្រាសកម្មភាពរយៈពេលវែងក្នុង Multi-Pocket E-Wallet។
+              </p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-4 border-l-4 border-l-amber-400">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-mono-code font-bold text-amber-400">02 • INVEST</span>
+                <span class="text-xs font-bold text-amber-300">វិនិយោគ</span>
+              </div>
+              <h3 class="font-bold text-white text-base mt-1" data-i18n="msg_invest_title">Invest / វិនិយោគ</h3>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed" data-i18n="msg_invest_desc">
+                ចូលរួមវិនិយោគលើកសិកម្ម ពាណិជ្ជកម្ម ផលិតកម្ម ថាមពល បច្ចេកវិទ្យា និងអចលនទ្រព្យដែលមានការត្រួតពិនិត្យ។
+              </p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-4 border-l-4 border-l-teal-400">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-mono-code font-bold text-teal-300">03 • RETURN</span>
+                <span class="text-xs font-bold text-teal-300">ផលត្រឡប់</span>
+              </div>
+              <h3 class="font-bold text-white text-base mt-1" data-i18n="msg_return_title">Return / ទទួលផលត្រឡប់វិញ</h3>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed" data-i18n="msg_return_desc">
+                ទទួលផលប្រយោជន៍ ពិន្ទុ តំណែង និងចំណែករួមតាមការចូលរួមពិតប្រាកដ និងវដ្តប្រតិបត្តិការច្បាស់លាស់។
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2026-2052 Long-Term Vision Metrics Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel rounded-3xl p-6 space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-700/80 pb-4">
+              <div>
+                <span class="text-[11px] font-mono-code text-amber-400 uppercase font-bold">LONG-TERM HORIZON • 2026–2052</span>
+                <h3 class="text-lg font-extrabold text-white mt-0.5" data-i18n="vision_2052_heading">ចក្ខុវិស័យវែងឆ្ងាយ MSN (២០២៦–២០៥២)</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded-lg bg-amber-400/15 border border-amber-400/30 text-amber-300 font-mono-code text-xs font-bold">
+                2052 TARGET
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3.5">
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 flex items-center justify-between">
+                <div>
+                  <p class="text-xs text-slate-400" data-i18n="metric_members_lbl">សមាជិកសរុបទូទាំងប្រទេស</p>
+                  <p class="text-xs text-slate-500 mt-0.5" data-i18n="metric_members_sub">Nationwide Active & Registered Network</p>
+                </div>
+                <span class="text-2xl font-extrabold text-emerald-400 font-mono-code">10,000,000+</span>
+              </div>
+
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 flex items-center justify-between">
+                <div>
+                  <p class="text-xs text-slate-400" data-i18n="metric_partners_lbl">ដៃគូអាជីវកម្ម និងបណ្តាញ</p>
+                  <p class="text-xs text-slate-500 mt-0.5" data-i18n="metric_partners_sub">Merchants, Farmers, SMEs & Enterprises</p>
+                </div>
+                <span class="text-2xl font-extrabold text-amber-300 font-mono-code">780,000+</span>
+              </div>
+
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 flex items-center justify-between">
+                <div>
+                  <p class="text-xs text-slate-400" data-i18n="metric_proj_lbl">ការព្យាករណ៍មាត្រដ្ឋានសេដ្ឋកិច្ច (២០៥២)</p>
+                  <p class="text-xs text-slate-500 mt-0.5" data-i18n="metric_proj_sub">Long-Term Ecosystem Scale Projection</p>
+                </div>
+                <span class="text-2xl font-extrabold text-teal-300 font-mono-code">$6B</span>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-500/12 via-slate-900/90 to-amber-500/12 border border-amber-400/25 rounded-2xl p-3.5 text-xs text-slate-300 leading-relaxed" data-i18n="vision_quote">
+              «មនុស្សគ្រប់រូបមានតម្លៃ។ រាល់ការចូលរួមមានតម្លៃ។ រាល់តម្លៃដែលបានបង្កើត ត្រូវទទួលបានការទទួលស្គាល់ ការកត់ត្រា និងការចែករំលែកអត្ថប្រយោជន៍ប្រកបដោយតម្លាភាព យុត្តិធម៌ និងនិរន្តរភាព។»
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. CORE VISION, MISSION & ECONOMIC CONSTITUTION (10 PRINCIPLES) ================= -->
+  <section id="vision-constitution" class="py-14 md:py-18 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="text-xs font-mono-code font-bold uppercase tracking-wider text-emerald-400">MSN-CONSTITUTION-001 • MSN-CHARTER-001</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-i18n="const_heading">
+            ចក្ខុវិស័យ បេសកកម្ម និងរដ្ឋធម្មនុញ្ញសេដ្ឋកិច្ច MSN (គោលការណ៍គ្រឹះ ១០ ប្រការ)
+          </h2>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-400 max-w-xl" data-i18n="const_sub">
+          កសាងប្រព័ន្ធសេដ្ឋកិច្ចឌីជីថលផ្អែកលើការចូលរួម ដែលបើកទូលាយសម្រាប់សិស្ស និស្សិត កម្មករ កសិករ អាជីវករ អ្នកជំនាញ និងសហគមន៍។
+        </p>
+      </div>
+
+      <!-- Vision & Mission Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <div class="glass-panel rounded-3xl p-6 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/15 text-amber-300 text-xs font-bold">
+            <span>VISION • ចក្ខុវិស័យ</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-white" data-i18n="vision_card_title">ប្រព័ន្ធសេដ្ឋកិច្ចជាតិឌីជីថលផ្អែកលើការចូលរួម</h3>
+          <p class="text-sm text-slate-300 leading-relaxed" data-i18n="vision_card_body">
+            បង្កើតប្រព័ន្ធសេដ្ឋកិច្ចជាតិឌីជីថល ដែលអនុញ្ញាតឱ្យមនុស្សគ្រប់រូបអាចបង្កើត កាន់កាប់ និងទទួលបានតម្លៃសេដ្ឋកិច្ចពីការចូលរួមរបស់ខ្លួន មិនថាមានទុនច្រើនឬតិច ដោយឈរលើការចូលរួមពិតប្រាកដ និងកម្មសិទ្ធិសេដ្ឋកិច្ចរួម។
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-3xl p-6 space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 text-xs font-bold">
+            <span>MISSION • បេសកកម្មស្នូលទាំង ៥</span>
+          </div>
+          <h3 class="text-xl font-extrabold text-white" data-i18n="mission_card_title">ការអភិវឌ្ឍមនុស្ស អាជីវកម្ម សហគមន៍ បច្ចេកវិទ្យា និងវិនិយោគ</h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-slate-300 pt-1" id="missionListContainer">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- 10 Foundational Principles Grid -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-7">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-5">
+          <h3 class="text-base sm:text-lg font-extrabold text-amber-300" data-i18n="ten_prin_title">
+            គោលការណ៍គ្រឹះទាំង ១០ ប្រការរបស់ MSN (MSN Master Charter)
+          </h3>
+          <span class="font-mono-code text-xs text-slate-400">10 PILLARS</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5" id="tenPrinciplesGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. GOVERNANCE, DEPARTMENTS, 8-LEVEL REPRESENTATION & NATIONWIDE NETWORK ================= -->
+  <section id="governance-network" class="py-14 md:py-18 bg-[#091122] border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-mono-code font-bold uppercase tracking-wider text-amber-400">
+          MSN-GOV-001 • MSN-GOV-002 • NATIONWIDE NETWORK
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-i18n="gov_sec_heading">
+          អភិបាលកិច្ច នាយកដ្ឋានស្នូល ៥ ប្រព័ន្ធតំណាង ៨ កម្រិត និងបណ្តាញទូទាំងប្រទេស
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2" data-i18n="gov_sec_sub">
+          MSN ដំណើរការក្រោមការដឹកនាំរបស់ក្រុមប្រឹក្សាភិបាល គណៈកម្មាធិការប្រតិបត្តិ និងនាយកដ្ឋានស្នូល ៥ ភ្ជាប់ជាមួយប្រព័ន្ធតំណាងពីមូលដ្ឋានដល់ថ្នាក់ជាតិ និងបណ្តាញសមាជិកតាមខេត្ត រាជធានី ស្រុក/ខណ្ឌ ឃុំ សង្កាត់ទូទាំងប្រទេស។
+        </p>
+      </div>
+
+      <!-- Top Row: Board of Directors, 5 Core Departments, Executive Committee -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <!-- Board of Directors -->
+        <div class="glass-card rounded-3xl p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-amber-400/15 text-amber-300 font-mono-code text-[11px] font-bold">BOARD</span>
+            <span class="text-xs text-slate-400" data-i18n="board_tag">អភិបាលកិច្ចកំពូល</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-white" data-i18n="board_title">ក្រុមប្រឹក្សាភិបាល (Board of Directors)</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="board_desc">
+            កំណត់ទិសដៅយុទ្ធសាស្ត្រ ធម្មនុញ្ញ គោលនយោបាយកំពូល ការត្រួតពិនិត្យហានិភ័យ និងការអនុម័តគម្រោងសំខាន់ៗ ដើម្បីធានាថាសកម្មភាពទាំងអស់គោរពតាមច្បាប់ និងផលប្រយោជន៍សមាជិក។
+          </p>
+        </div>
+
+        <!-- 5 Core Departments -->
+        <div class="glass-card rounded-3xl p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-300 font-mono-code text-[11px] font-bold">5 DEPARTMENTS</span>
+            <span class="text-xs text-slate-400" data-i18n="dept_tag">រចនាសម្ព័ន្ធជំនាញ</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-white" data-i18n="dept_title">នាយកដ្ឋានស្នូលទាំង ៥ (5 Core Departments)</h3>
+          <ul class="space-y-1.5 text-xs sm:text-sm text-slate-300" id="coreDepartmentsList">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+
+        <!-- Executive Committee -->
+        <div class="glass-card rounded-3xl p-6 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-teal-500/15 text-teal-300 font-mono-code text-[11px] font-bold">EXEC COMM</span>
+            <span class="text-xs text-slate-400" data-i18n="exec_tag">ការអនុវត្តប្រតិបត្តិការ</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-white" data-i18n="exec_title">គណៈកម្មាធិការប្រតិបត្តិ (Executive Committee)</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed" data-i18n="exec_desc">
+            សម្របសម្រួលប្រតិបត្តិការប្រចាំថ្ងៃ ផែនការសកម្មភាព ការគ្រប់គ្រងគម្រោង បណ្តាញ និងការរាយការណ៍វឌ្ឍនភាពជូនក្រុមប្រឹក្សាភិបាលតាម SOP និង KPI ដែលបានកំណត់។
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Row: 8-Level National Representative System & Nationwide Geographic Network -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- 8-Level National Representative System (6 cols) -->
+        <div class="lg:col-span-6 glass-panel rounded-3xl p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div>
+              <span class="text-[11px] font-mono-code text-amber-400 font-bold">MSN-GOV-002 • 8 LEVELS</span>
+              <h3 class="text-base sm:text-lg font-extrabold text-white" data-i18n="rep_system_title">
+                ប្រព័ន្ធតំណាងថ្នាក់ជាតិ ៨ កម្រិត (ក្រុម ៣០ ដល់ ថ្នាក់ជាតិ ១,០០០,០០០+)
+              </h3>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="rep8LevelsGrid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Nationwide Geographic Network Explorer (6 cols) -->
+        <div class="lg:col-span-6 glass-panel rounded-3xl p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div>
+              <span class="text-[11px] font-mono-code text-emerald-400 font-bold">NATIONWIDE COVERAGE • 25 CAPITALS/PROVINCES</span>
+              <h3 class="text-base sm:text-lg font-extrabold text-white" data-i18n="geo_net_title">
+                បណ្តាញសមាជិកតាមខេត្ត រាជធានី ស្រុក/ខណ្ឌ ឃុំ សង្កាត់ទូទាំងប្រទេស
+              </h3>
+            </div>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-300" data-i18n="geo_net_desc">
+            ជ្រើសរើសរាជធានី-ខេត្ត ដើម្បីពិនិត្យមើលរចនាសម្ព័ន្ធបណ្តាញសមាជិកតាមស្រុក/ខណ្ឌ ឃុំ/សង្កាត់ និងកម្រិតសកម្មភាពក្នុងមូលដ្ឋានទូទាំងប្រទេស៖
+          </p>
+
+          <!-- Interactive Region / Province Selector -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label for="provinceSelect" class="block text-xs font-semibold text-amber-300 mb-1.5" data-i18n="lbl_select_prov">
+                ជ្រើសរើសរាជធានី / ខេត្ត (Capital / Province)
+              </label>
+              <select
+                id="provinceSelect"
+                onchange="updateNationwideNetwork()"
+                class="w-full rounded-xl bg-[#081020] border border-slate-700 focus:border-amber-400 text-white text-xs sm:text-sm px-3.5 py-2.5 outline-none transition"
+              >
+                <!-- Populated by JS -->
+              </select>
+            </div>
+
+            <div>
+              <label for="districtSelect" class="block text-xs font-semibold text-emerald-300 mb-1.5" data-i18n="lbl_select_dist">
+                ជ្រើសរើសស្រុក / ខណ្ឌ (District / Khan)
+              </label>
+              <select
+                id="districtSelect"
+                onchange="updateNationwideNetwork()"
+                class="w-full rounded-xl bg-[#081020] border border-slate-700 focus:border-emerald-400 text-white text-xs sm:text-sm px-3.5 py-2.5 outline-none transition"
+              >
+                <!-- Populated by JS -->
+              </select>
+            </div>
+          </div>
+
+          <!-- Geographic Network Summary Box -->
+          <div id="geoNetworkSummaryCard" class="bg-[#081020] border border-slate-800 rounded-2xl p-4 space-y-3">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. FIVE PARTICIPATION CAPITALS & 5 CATEGORIES OF PARTICIPATION ================= -->
+  <section id="capitals-participation" class="py-14 md:py-18 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-10">
+        <span class="text-xs font-mono-code font-bold uppercase tracking-wider text-emerald-400">
+          MSN-HCE-001 • MSN-HCM-001 • 5 CAPITALS & 5 PARTICIPATION TYPES
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-i18n="cap_sec_heading">
+          ធនធានមនុស្ស ៥ ប្រភេទ (FC, BC, KC, NC, SC) និងប្រភេទចូលរួម ៥ ទម្រង់
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2" data-i18n="cap_sec_sub">
+          MSN វាយតម្លៃតម្លៃមនុស្សមិនត្រឹមតែតាមទុនហិរញ្ញវត្ថុប៉ុណ្ណោះទេ ប៉ុន្តែតាមរយៈធនធានស្នូលទាំង ៥ និងការចូលរួមជាក់ស្តែងទាំង ៥ ប្រភេទរបស់សមាជិកគ្រប់រូប។
+        </p>
+      </div>
+
+      <!-- Five Participation Capitals (FC, BC, KC, NC, SC) -->
+      <div class="mb-10">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <h3 class="text-base sm:text-lg font-extrabold text-amber-300" data-i18n="five_cap_title">
+            ធនធានមូលដ្ឋានទាំង ៥ របស់ MSN (HCV = FC 25% + BC 25% + KC 20% + NC 20% + SC 10%)
+          </h3>
+          <span class="font-mono-code text-xs text-emerald-300 bg-emerald-500/10 border border-emerald-500/25 px-2.5 py-1 rounded-lg">
+            MSN-HCM-001
+          </span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="fiveCapitalsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- 5 Practical Categories of Participation -->
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <h3 class="text-base sm:text-lg font-extrabold text-emerald-300" data-i18n="five_part_title">
+            ប្រភេទចូលរួមទាំង ៥ ក្នុងបណ្តាញមហាសិរី MSN
+          </h3>
+          <span class="font-mono-code text-xs text-amber-300 bg-amber-500/10 border border-amber-500/25 px-2.5 py-1 rounded-lg">
+            PARTICIPATION ROLES
+          </span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="fiveParticipationGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. INTERACTIVE TABS / FILTERS EXPLORER ================= -->
+  <section id="interactive-explorer" class="py-14 md:py-18 bg-[#091122]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-mono-code font-bold uppercase tracking-wider text-amber-400">
+          INTERACTIVE ARCHITECTURE & ROADMAP EXPLORER
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-i18n="exp_heading">
+          ស្វែងយល់សសរស្តម្ភសំខាន់ៗនៃប្រព័ន្ធ MSN
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2" data-i18n="exp_sub">
+          ជ្រើសរើសផ្ទាំងខាងក្រោមដើម្បីពិនិត្យមើលសសរស្តម្ភអំពីយើង រចនាសម្ព័ន្ធអភិបាលកិច្ច-បណ្តាញជាតិ ធនធាន-ការចូលរួម និងផែនទីបង្ហាញផ្លូវ ២០២៦–២០៥២ ព្រមទាំងគោលការណ៍ស្នូល។
+        </p>
+      </div>
+
+      <!-- Interactive Tabs -->
+      <div class="flex flex-wrap gap-2.5 mb-6" role="tablist">
+        <button
+          type="button"
+          id="tab-about-pillars"
+          onclick="setExplorerTab('about-pillars')"
+          class="pillar-tab-active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold border border-slate-700 bg-slate-900/90 text-slate-300 transition cursor-pointer"
+          data-i18n="tab_1"
+        >
+          ១. សសរស្តម្ភអំពី MSN
+        </button>
+
+        <button
+          type="button"
+          id="tab-gov-nationwide"
+          onclick="setExplorerTab('gov-nationwide')"
+          class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold border border-slate-700 bg-slate-900/90 text-slate-300 transition cursor-pointer"
+          data-i18n="tab_2"
+        >
+          ២. អភិបាលកិច្ច & បណ្តាញទូទាំងប្រទេស
+        </button>
+
+        <button
+          type="button"
+          id="tab-capitals-roles"
+          onclick="setExplorerTab('capitals-roles')"
+          class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold border border-slate-700 bg-slate-900/90 text-slate-300 transition cursor-pointer"
+          data-i18n="tab_3"
+        >
+          ៣. ធនធាន ៥ & ប្រភេទចូលរួម ៥
+        </button>
+
+        <button
+          type="button"
+          id="tab-roadmap-principles"
+          onclick="setExplorerTab('roadmap-principles')"
+          class="px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold border border-slate-700 bg-slate-900/90 text-slate-300 transition cursor-pointer"
+          data-i18n="tab_4"
+        >
+          ៤. ផែនទី ២០២៦–២០៥២ & គោលការណ៍ស្នូល
+        </button>
+      </div>
+
+      <!-- Dynamic Tab Panel -->
+      <div id="explorerPanel" class="glass-panel rounded-3xl p-6 sm:p-8">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-slate-800 bg-[#050912] py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div>
+        <p class="font-bold text-white text-sm" data-i18n="footer_brand">បណ្តាញមហាសិរី - Mohaserei Network (MSN)</p>
+        <p class="mt-0.5" data-i18n="footer_note">Save (សន្សំ) • Invest (វិនិយោគ) • Return (ទទួលផលត្រឡប់វិញ) • 2026–2052</p>
+      </div>
+      <div class="font-mono-code text-amber-400/85">
+        MSN-CONSTITUTION-001 • MSN-GOV-001 • MSN-HCE-001
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let currentLang = 'km';
+    let currentExplorerTab = 'about-pillars';
+
+    const dictionary = {
+      km: {
+        header_title: 'បណ្តាញមហាសិរី - Mohaserei Network (MSN) | អំពីយើង (About)',
+        header_subtitle: 'ប្រព័ន្ធសេដ្ឋកិច្ចឌីជីថលផ្អែកលើការចូលរួម • Participation-Based Digital Economic Ecosystem',
+        nav_vision: 'ចក្ខុវិស័យ & រដ្ឋធម្មនុញ្ញ',
+        nav_gov: 'អភិបាលកិច្ច & បណ្តាញជាតិ',
+        nav_capitals: 'ធនធាន ៥ & ការចូលរួម ៥',
+        nav_explorer: 'ស្វែងយល់លម្អិត',
+        hero_badge: 'រៀបចំដោយ៖ ឯកឧត្តម មេណ្ឌ មុនី • អគ្គស្ថាបនិក និងប្រធានក្រុមប្រឹក្សាភិបាល MSN',
+        hero_kicker: 'MSN CORE MEMBER & POINT SYSTEM (V1.0) • ECOSYSTEM (2027–2052) • SYSTEM UPDATE (2026–2052)',
+        hero_main_title: 'បណ្តាញមហាសិរី និងប្រព័ន្ធអេកូឡូស៊ីសេដ្ឋកិច្ចឌីជីថល',
+        hero_summary: 'មនុស្សគ្រប់រូបមានតម្លៃសេដ្ឋកិច្ច។ រាល់ការចូលរួមពិតប្រាកដត្រូវបានវាស់វែង កត់ត្រា និងបម្លែងទៅជាពិន្ទុ តំណែង ទ្រព្យសកម្ម និងចំណែកផលប្រយោជន៍រួមប្រកបដោយតម្លាភាព គណនេយ្យភាព និងសវនកម្ម។',
+        msg_save_title: 'Save / សន្សំ',
+        msg_save_desc: 'កសាងទម្លាប់សន្សំជាប្រព័ន្ធ និងកំណត់ត្រាសកម្មភាពរយៈពេលវែងក្នុង Multi-Pocket E-Wallet។',
+        msg_invest_title: 'Invest / វិនិយោគ',
+        msg_invest_desc: 'ចូលរួមវិនិយោគលើកសិកម្ម ពាណិជ្ជកម្ម ផលិតកម្ម ថាមពល បច្ចេកវិទ្យា និងអចលនទ្រព្យដែលមានការត្រួតពិនិត្យ។',
+        msg_return_title: 'Return / ទទួលផលត្រឡប់វិញ',
+        msg_return_desc: 'ទទួលផលប្រយោជន៍ ពិន្ទុ តំណែង និងចំណែករួមតាមការចូលរួមពិតប្រាកដ និងវដ្តប្រតិបត្តិការច្បាស់លាស់។',
+        vision_2052_heading: 'ចក្ខុវិស័យវែងឆ្ងាយ MSN (២០២៦–២០៥២)',
+        metric_members_lbl: 'សមាជិកសរុបទូទាំងប្រទេស',
+        metric_members_sub: 'Nationwide Active & Registered Network',
+        metric_partners_lbl: 'ដៃគូអាជីវកម្ម និងបណ្តាញ',
+        metric_partners_sub: 'Merchants, Farmers, SMEs & Enterprises',
+        metric_proj_lbl: 'ការព្យាករណ៍មាត្រដ្ឋានសេដ្ឋកិច្ច (២០៥២)',
+        metric_proj_sub: 'Long-Term Ecosystem Scale Projection',
+        vision_quote: '«មនុស្សគ្រប់រូបមានតម្លៃ។ រាល់ការចូលរួមមានតម្លៃ។ រាល់តម្លៃដែលបានបង្កើត ត្រូវទទួលបានការទទួលស្គាល់ ការកត់ត្រា និងការចែករំលែកអត្ថប្រយោជន៍ប្រកបដោយតម្លាភាព យុត្តិធម៌ និងនិរន្តរភាព។»',
+        const_heading: 'ចក្ខុវិស័យ បេសកកម្ម និងរដ្ឋធម្មនុញ្ញសេដ្ឋកិច្ច MSN (គោលការណ៍គ្រឹះ ១០ ប្រការ)',
+        const_sub: 'កសាងប្រព័ន្ធសេដ្ឋកិច្ចឌីជីថលផ្អែកលើការចូលរួម ដែលបើកទូលាយសម្រាប់សិស្ស និស្សិត កម្មករ កសិករ អាជីវករ អ្នកជំនាញ និងសហគមន៍។',
+        vision_card_title: 'ប្រព័ន្ធសេដ្ឋកិច្ចជាតិឌីជីថលផ្អែកលើការចូលរួម',
+        vision_card_body: 'បង្កើតប្រព័ន្ធសេដ្ឋកិច្ចជាតិឌីជីថល ដែលអនុញ្ញាតឱ្យមនុស្សគ្រប់រូបអាចបង្កើត កាន់កាប់ និងទទួលបានតម្លៃសេដ្ឋកិច្ចពីការចូលរួមរបស់ខ្លួន មិនថាមានទុនច្រើនឬតិច ដោយឈរលើការចូលរួមពិតប្រាកដ និងកម្មសិទ្ធិសេដ្ឋកិច្ចរួម។',
+        mission_card_title: 'ការអភិវឌ្ឍមនុស្ស អាជីវកម្ម សហគមន៍ បច្ចេកវិទ្យា និងវិនិយោគ',
+        ten_prin_title: 'គោលការណ៍គ្រឹះទាំង ១០ ប្រការរបស់ MSN (MSN Master Charter)',
+        gov_sec_heading: 'អភិបាលកិច្ច នាយកដ្ឋានស្នូល ៥ ប្រព័ន្ធតំណាង ៨ កម្រិត និងបណ្តាញទូទាំងប្រទេស',
+        gov_sec_sub: 'MSN ដំណើរការក្រោមការដឹកនាំរបស់ក្រុមប្រឹក្សាភិបាល គណៈកម្មាធិការប្រតិបត្តិ និងនាយកដ្ឋានស្នូល ៥ ភ្ជាប់ជាមួយប្រព័ន្ធតំណាងពីមូលដ្ឋានដល់ថ្នាក់ជាតិ និងបណ្តាញសមាជិកតាមខេត្ត រាជធានី ស្រុក/ខណ្ឌ ឃុំ សង្កាត់ទូទាំងប្រទេស។',
+        board_tag: 'អភិបាលកិច្ចកំពូល',
+        board_title: 'ក្រុមប្រឹក្សាភិបាល (Board of Directors)',
+        board_desc: 'កំណត់ទិសដៅយុទ្ធសាស្ត្រ ធម្មនុញ្ញ គោលនយោបាយកំពូល ការត្រួតពិនិត្យហានិភ័យ និងការអនុម័តគម្រោងសំខាន់ៗ ដើម្បីធានាថាសកម្មភាពទាំងអស់គោរពតាមច្បាប់ និងផលប្រយោជន៍សមាជិក។',
+        dept_tag: 'រចនាសម្ព័ន្ធជំនាញ',
+        dept_title: 'នាយកដ្ឋានស្នូលទាំង ៥ (5 Core Departments)',
+        exec_tag: 'ការអនុវត្តប្រតិបត្តិការ',
+        exec_title: 'គណៈកម្មាធិការប្រតិបត្តិ (Executive Committee)',
+        exec_desc: 'សម្របសម្រួលប្រតិបត្តិការប្រចាំថ្ងៃ ផែនការសកម្មភាព ការគ្រប់គ្រងគម្រោង បណ្តាញ និងការរាយការណ៍វឌ្ឍនភាពជូនក្រុមប្រឹក្សាភិបាលតាម SOP និង KPI ដែលបានកំណត់។',
+        rep_system_title: 'ប្រព័ន្ធតំណាងថ្នាក់ជាតិ ៨ កម្រិត (ក្រុម ៣០ ដល់ ថ្នាក់ជាតិ ១,០០០,០០០+)',
+        geo_net_title: 'បណ្តាញសមាជិកតាមខេត្ត រាជធានី ស្រុក/ខណ្ឌ ឃុំ សង្កាត់ទូទាំងប្រទេស',
+        geo_net_desc: 'ជ្រើសរើសរាជធានី-ខេត្ត ដើម្បីពិនិត្យមើលរចនាសម្ព័ន្ធបណ្តាញសមាជិកតាមស្រុក/ខណ្ឌ ឃុំ/សង្កាត់ និងកម្រិតសកម្មភាពក្នុងមូលដ្ឋានទូទាំងប្រទេស៖',
+        lbl_select_prov: 'ជ្រើសរើសរាជធានី / ខេត្ត (Capital / Province)',
+        lbl_select_dist: 'ជ្រើសរើសស្រុក / ខណ្ឌ (District / Khan)',
+        cap_sec_heading: 'ធនធានមនុស្ស ៥ ប្រភេទ (FC, BC, KC, NC, SC) និងប្រភេទចូលរួម ៥ ទម្រង់',
+        cap_sec_sub: 'MSN វាយតម្លៃតម្លៃមនុស្សមិនត្រឹមតែតាមទុនហិរញ្ញវត្ថុប៉ុណ្ណោះទេ ប៉ុន្តែតាមរយៈធនធានស្នូលទាំង ៥ និងការចូលរួមជាក់ស្តែងទាំង ៥ ប្រភេទរបស់សមាជិកគ្រប់រូប។',
+        five_cap_title: 'ធនធានមូលដ្ឋានទាំង ៥ របស់ MSN (HCV = FC 25% + BC 25% + KC 20% + NC 20% + SC 10%)',
+        five_part_title: 'ប្រភេទចូលរួមទាំង ៥ ក្នុងបណ្តាញមហាសិរី MSN',
+        exp_heading: 'ស្វែងយល់សសរស្តម្ភសំខាន់ៗនៃប្រព័ន្ធ MSN',
+        exp_sub: 'ជ្រើសរើសផ្ទាំងខាងក្រោមដើម្បីពិនិត្យមើលសសរស្តម្ភអំពីយើង រចនាសម្ព័ន្ធអភិបាលកិច្ច-បណ្តាញជាតិ ធនធាន-ការចូលរួម និងផែនទីបង្ហាញផ្លូវ ២០២៦–២០៥២ ព្រមទាំងគោលការណ៍ស្នូល។',
+        tab_1: '១. សសរស្តម្ភអំពី MSN',
+        tab_2: '២. អភិបាលកិច្ច & បណ្តាញទូទាំងប្រទេស',
+        tab_3: '៣. ធនធាន ៥ & ប្រភេទចូលរួម ៥',
+        tab_4: '៤. ផែនទី ២០២៦–២០៥២ & គោលការណ៍ស្នូល',
+        footer_brand: 'បណ្តាញមហាសិរី - Mohaserei Network (MSN)',
+        footer_note: 'Save (សន្សំ) • Invest (វិនិយោគ) • Return (ទទួលផលត្រឡប់វិញ) • 2026–2052'
+      },
+      en: {
+        header_title: 'បណ្តាញមហាសិរី - Mohaserei Network (MSN) | អំពីយើង (About)',
+        header_subtitle: 'ប្រព័ន្ធសេដ្ឋកិច្ចឌីជីថលផ្អែកលើការចូលរួម • Participation-Based Digital Economic Ecosystem',
+        nav_vision: 'Vision & Constitution',
+        nav_gov: 'Governance & Network',
+        nav_capitals: '5 Capitals & 5 Roles',
+        nav_explorer: 'Interactive Explorer',
+        hero_badge: 'Prepared by: H.E. Mend Mony • Founder & Chairman of the Board of Directors, MSN',
+        hero_kicker: 'MSN CORE MEMBER & POINT SYSTEM (V1.0) • ECOSYSTEM (2027–2052) • SYSTEM UPDATE (2026–2052)',
+        hero_main_title: 'Mohaserei Network & Participation-Based Digital Economic Ecosystem',
+        hero_summary: 'Every person has economic value. Every genuine participation is measured, recorded, and converted into points, ranks, assets, and shared value under transparency, accountability, and auditability.',
+        msg_save_title: 'Save / សន្សំ',
+        msg_save_desc: 'Build disciplined long-term savings and verifiable participation records inside the Multi-Pocket E-Wallet.',
+        msg_invest_title: 'Invest / វិនិយោគ',
+        msg_invest_desc: 'Participate in vetted investments across agriculture, commerce, manufacturing, energy, technology, and real estate.',
+        msg_return_title: 'Return / ទទួលផលត្រឡប់វិញ',
+        msg_return_desc: 'Earn rewards, points, ranks, and shared value proportional to verified participation and clear operating cycles.',
+        vision_2052_heading: 'MSN Long-Term Vision (2026–2052)',
+        metric_members_lbl: 'Nationwide Members',
+        metric_members_sub: 'Registered & Active Network Scale',
+        metric_partners_lbl: 'Business & Network Partners',
+        metric_partners_sub: 'Merchants, Farmers, SMEs & Enterprises',
+        metric_proj_lbl: '2052 Economic Scale Projection',
+        metric_proj_sub: 'Long-Term Ecosystem Projection',
+        vision_quote: '"Every person has value. Every participation has value. All value created must be recognized, recorded, and shared transparently, fairly, and sustainably."',
+        const_heading: 'MSN Vision, Mission & Economic Constitution (10 Foundational Principles)',
+        const_sub: 'Building a participation-based digital economic ecosystem open to students, workers, farmers, merchants, specialists, and communities.',
+        vision_card_title: 'Participation-Based National Digital Economic Ecosystem',
+        vision_card_body: 'Create a national digital economic system enabling every individual to build, own, and receive economic value from their participation regardless of initial capital size, grounded in genuine contribution and shared ownership.',
+        mission_card_title: 'Human Capital, Business, Community, Technology & Investment',
+        ten_prin_title: 'MSN 10 Foundational Principles (MSN Master Charter)',
+        gov_sec_heading: 'Governance, 5 Core Departments, 8-Level Representation & Nationwide Network',
+        gov_sec_sub: 'MSN operates under the Board of Directors, Executive Committee, and 5 Core Departments connected to the 8-level representative ladder and nationwide coverage across Provinces/Municipalities, Districts/Khans, and Communes/Sangkats.',
+        board_tag: 'Supreme Oversight',
+        board_title: 'Board of Directors (ក្រុមប្រឹក្សាភិបាល)',
+        board_desc: 'Establishes strategic direction, charters, top-level policies, risk oversight, and major project approvals so all operations uphold lawfulness and member interests.',
+        dept_tag: 'Functional Pillars',
+        dept_title: '5 Core Departments (នាយកដ្ឋានស្នូលទាំង ៥)',
+        exec_tag: 'Execution Body',
+        exec_title: 'Executive Committee (គណៈកម្មាធិការប្រតិបត្តិ)',
+        exec_desc: 'Coordinates daily operations, action plans, project and network execution, and progress reporting to the Board according to defined SOPs and KPIs.',
+        rep_system_title: '8-Level National Representative System (Team 30 to National 1,000,000+)',
+        geo_net_title: 'Nationwide Member Network by Province/Municipality, District/Khan & Commune/Sangkat',
+        geo_net_desc: 'Select a Capital/Province and District/Khan to inspect local member network structure, communes/sangkats, and grassroots activity metrics nationwide:',
+        lbl_select_prov: 'Select Capital / Province (រាជធានី / ខេត្ត)',
+        lbl_select_dist: 'Select District / Khan (ស្រុក / ខណ្ឌ)',
+        cap_sec_heading: 'Five Participation Capitals (FC, BC, KC, NC, SC) & 5 Categories of Participation',
+        cap_sec_sub: 'MSN values human potential beyond financial capital alone, measuring all 5 core capitals and 5 practical participation roles across the network.',
+        five_cap_title: 'MSN Five Core Capitals (HCV = FC 25% + BC 25% + KC 20% + NC 20% + SC 10%)',
+        five_part_title: 'Five Practical Categories of Participation in MSN',
+        exp_heading: 'Interactive Exploration of MSN About Pillars',
+        exp_sub: 'Switch between tabs below to inspect MSN About pillars, governance & nationwide network structure, 5 capitals & 5 participation roles, and the 2026–2052 roadmap & core principles.',
+        tab_1: '1. MSN About Pillars',
+        tab_2: '2. Governance & Nationwide Network',
+        tab_3: '3. 5 Capitals & 5 Participation Types',
+        tab_4: '4. 2026–2052 Roadmap & Core Principles',
+        footer_brand: 'បណ្តាញមហាសិរី - Mohaserei Network (MSN)',
+        footer_note: 'Save (សន្សំ) • Invest (វិនិយោគ) • Return (ទទួលផលត្រឡប់វិញ) • 2026–2052'
+      }
+    };
+
+    const missionsData = [
+      { km: '១. អភិវឌ្ឍធនធានមនុស្ស (Human Capital)', en: '1. Develop Human Capital' },
+      { km: '២. អភិវឌ្ឍអាជីវកម្ម (Business Growth)', en: '2. Develop Business & Commerce' },
+      { km: '៣. អភិវឌ្ឍសហគមន៍ (Community Impact)', en: '3. Strengthen Communities' },
+      { km: '៤. អភិវឌ្ឍបច្ចេកវិទ្យា (Digital & AI Platform)', en: '4. Advance Technology Systems' },
+      { km: '៥. អភិវឌ្ឍវិនិយោគជាតិ (Investment System)', en: '5. Build National Investment System' }
+    ];
+
+    const tenPrinciples = [
+      { num: '01', km: 'មនុស្សជាទ្រព្យសម្បត្តិដ៏មានតម្លៃបំផុត', en: 'Human Value First' },
+      { num: '02', km: 'រាល់ការចូលរួមមានតម្លៃសេដ្ឋកិច្ច', en: 'Participation Economy' },
+      { num: '03', km: 'តម្លាភាពអាចត្រួតពិនិត្យបានគ្រប់ពេល', en: 'Transparency' },
+      { num: '04', km: 'អ្នកគ្រប់គ្រងត្រូវមានគណនេយ្យភាព', en: 'Accountability' },
+      { num: '05', km: 'ការឡើងតំណែងផ្អែកលើសមត្ថភាពនិងស្នាដៃ', en: 'Meritocracy' },
+      { num: '06', km: 'និរន្តរភាពរយៈពេលវែងរហូតដល់ឆ្នាំ ២០៥២', en: 'Sustainability' },
+      { num: '07', km: 'បើកទូលាយសម្រាប់មនុស្សគ្រប់រូប', en: 'Inclusiveness' },
+      { num: '08', km: 'ការច្នៃប្រឌិត និងកែលម្អឥតឈប់ឈរ', en: 'Innovation' },
+      { num: '09', km: 'ការសហការរីកចម្រើនរួមគ្នា', en: 'Collaboration' },
+      { num: '10', km: 'រួមចំណែកអភិវឌ្ឍសេដ្ឋកិច្ចជាតិ', en: 'National Development' }
+    ];
+
+    const fiveCoreDepartments = [
+      { km: '១. នាយកដ្ឋានសវនកម្ម (Audit Department)', en: '1. Audit Department' },
+      { km: '២. នាយកដ្ឋានគ្រប់គ្រង និងភាពជាអ្នកដឹកនាំ (Management & Leadership)', en: '2. Management & Leadership Dept.' },
+      { km: '៣. នាយកដ្ឋានវិន័យ (Discipline Department)', en: '3. Discipline Department' },
+      { km: '៤. នាយកដ្ឋានអភិវឌ្ឍន៍ និងហិរញ្ញវត្ថុ (Development & Finance)', en: '4. Development & Finance Dept.' },
+      { km: '៥. នាយកដ្ឋានបណ្តុះបណ្តាល (Training Department)', en: '5. Training Department' }
+    ];
+
+    const rep8Levels = [
+      { code: 'L1', km: 'ក្រុមសមាជិក (Team)', en: 'Member Team', scale: '30' },
+      { code: 'L2', km: 'ភូមិ / អង្គភាព', en: 'Village / Unit', scale: '100' },
+      { code: 'L3', km: 'ឃុំ / សង្កាត់', en: 'Commune / Sangkat', scale: '500' },
+      { code: 'L4', km: 'ស្រុក / ខណ្ឌ', en: 'District / Khan', scale: '3,000' },
+      { code: 'L5', km: 'ក្រុង / ស្រុកធំ', en: 'City / Major District', scale: '10,000' },
+      { code: 'L6', km: 'ខេត្ត / រាជធានី', en: 'Province / Capital', scale: '50,000' },
+      { code: 'L7', km: 'តំបន់ (Region)', en: 'Regional Council', scale: '250,000' },
+      { code: 'L8', km: 'ថ្នាក់ជាតិ (National)', en: 'National Council', scale: '1,000,000+' }
+    ];
+
+    const nationwideData = [
+      {
+        id: 'phnom-penh',
+        provKm: 'រាជធានីភ្នំពេញ (Phnom Penh)',
+        provEn: 'Phnom Penh Capital',
+        communesTotal: 105,
+        membersEst: '185,400',
+        activeRate: '76%',
+        districts: [
+          { nameKm: 'ខណ្ឌចំការមន', nameEn: 'Chamkarmon Khan', communes: ['សង្កាត់ទន្លេបាសាក់', 'សង្កាត់បឹងកេងកងទី១', 'សង្កាត់ផ្សារដើមថ្កូវ'], members: '24,800', active: '79%' },
+          { nameKm: 'ខណ្ឌដូនពេញ', nameEn: 'Daun Penh Khan', communes: ['សង្កាត់ផ្សារថ្មីទី១', 'សង្កាត់ចតុមុខ', 'សង្កាត់វត្តភ្នំ'], members: '19,650', active: '75%' },
+          { nameKm: 'ខណ្ឌមានជ័យ', nameEn: 'Mean Chey Khan', communes: ['សង្កាត់ស្ទឹងមានជ័យទី១', 'សង្កាត់ចាក់អង្រែលើ', 'សង្កាត់និរោធ'], members: '31,200', active: '77%' }
+        ]
+      },
+      {
+        id: 'siem-reap',
+        provKm: 'ខេត្តសៀមរាប (Siem Reap)',
+        provEn: 'Siem Reap Province',
+        communesTotal: 100,
+        membersEst: '112,900',
+        activeRate: '72%',
+        districts: [
+          { nameKm: 'ក្រុងសៀមរាប', nameEn: 'Siem Reap City', communes: ['សង្កាត់សាលាកំរើក', 'សង្កាត់ស្វាយដង្គំ', 'សង្កាត់សៀមរាប'], members: '28,400', active: '74%' },
+          { nameKm: 'ស្រុកប្រាសាទបាគង', nameEn: 'Prasat Bakong District', communes: ['ឃុំរលួស', 'ឃុំកន្ទ្រាំង', 'ឃុំបាគង'], members: '14,200', active: '71%' }
+        ]
+      },
+      {
+        id: 'battambang',
+        provKm: 'ខេត្តបាត់ដំបង (Battambang)',
+        provEn: 'Battambang Province',
+        communesTotal: 103,
+        membersEst: '124,600',
+        activeRate: '73%',
+        districts: [
+          { nameKm: 'ក្រុងបាត់ដំបង', nameEn: 'Battambang City', communes: ['សង្កាត់ទួលតាឯក', 'សង្កាត់ស្វាយប៉ោ', 'សង្កាត់អូរចារ'], members: '26,900', active: '75%' },
+          { nameKm: 'ស្រុកមោងឫស្សី', nameEn: 'Moung Ruessei District', communes: ['ឃុំមោង', 'ឃុំព្រៃតូច', 'ឃុំគារ'], members: '17,300', active: '72%' }
+        ]
+      },
+      {
+        id: 'kampong-cham',
+        provKm: 'ខេត្តកំពង់ចាម (Kampong Cham)',
+        provEn: 'Kampong Cham Province',
+        communesTotal: 109,
+        membersEst: '98,500',
+        activeRate: '70%',
+        districts: [
+          { nameKm: 'ក្រុងកំពង់ចាម', nameEn: 'Kampong Cham City', communes: ['សង្កាត់បឹងកkok', 'សង្កាត់កំពង់ចាម', 'សង្កាត់វាលវង់'], members: '21,500', active: '73%' },
+          { nameKm: 'ស្រុកជើងព្រៃ', nameEn: 'Cheung Prey District', communes: ['ឃុំសូទិព្វ', 'ឃុំត្រពាំងគរ', 'ឃុំព្រៃចារ'], members: '13,800', active: '69%' }
+        ]
+      },
+      {
+        id: 'kandal',
+        provKm: 'ខេត្តកណ្តាល (Kandal)',
+        provEn: 'Kandal Province',
+        communesTotal: 127,
+        membersEst: '136,800',
+        activeRate: '74%',
+        districts: [
+          { nameKm: 'ក្រុងតាខ្មៅ', nameEn: 'Ta Khmau City', communes: ['សង្កាត់តាខ្មៅ', 'សង្កាត់ដើមមៀន', 'សង្កាត់ព្រែកឫស្សី'], members: '29,100', active: '76%' },
+          { nameKm: 'ស្រុកកៀនស្វាយ', nameEn: 'Kien Svay District', communes: ['ឃុំកៀនស្វាយ', 'ឃុំគគីរ', 'ឃុំភូមិធំ'], members: '18,600', active: '73%' }
+        ]
+      }
+    ];
+
+    const fiveCapitals = [
+      {
+        code: 'FC • 25%',
+        titleKm: 'ធនហិរញ្ញវត្ថុ (Financial Capital)',
+        titleEn: 'Financial Capital (FC)',
+        descKm: 'ការសន្សំ ការវិនិយោគ ការទិញទំនិញ និងការប្រើប្រាស់សេវាកម្មក្នុងប្រព័ន្ធ។',
+        descEn: 'Savings, investments, purchases, and ecosystem service participation.'
+      },
+      {
+        code: 'BC • 25%',
+        titleKm: 'ធនអាជីវកម្ម (Business Capital)',
+        titleEn: 'Business Capital (BC)',
+        descKm: 'ការលក់ ការផ្គត់ផ្គង់ ការចែកចាយ ដឹកជញ្ជូន និងការបង្កើតសកម្មភាពអាជីវកម្ម។',
+        descEn: 'Sales, supply, distribution, logistics, and commercial value creation.'
+      },
+      {
+        code: 'KC • 20%',
+        titleKm: 'ធនចំណេះដឹង (Knowledge Capital)',
+        titleEn: 'Knowledge Capital (KC)',
+        descKm: 'ការរៀន ការបណ្តុះបណ្តាល ការបង្រៀន/ណែនាំ ជំនាញ និងការចែករំលែកមាតិកា។',
+        descEn: 'Learning, training completion, teaching/mentoring, skills, and content.'
+      },
+      {
+        code: 'NC • 20%',
+        titleKm: 'ធនបណ្តាញ (Network Capital)',
+        titleEn: 'Network Capital (NC)',
+        descKm: 'ការកសាងបណ្តាញសមាជិក ការជំរុញសកម្មភាពក្រុម និងការផ្គូផ្គងដៃគូ។',
+        descEn: 'Member network growth, active team engagement, and partner matching.'
+      },
+      {
+        code: 'SC • 10%',
+        titleKm: 'ធនសង្គម (Social Capital)',
+        titleEn: 'Social Capital (SC)',
+        descKm: 'ការងារស្ម័គ្រចិត្ត គម្រោង CSR និងការអភិវឌ្ឍសហគមន៍ប្រកបដោយនិរន្តរភាព។',
+        descEn: 'Volunteering, CSR initiatives, and sustainable community development.'
+      }
+    ];
+
+    const fiveParticipationCategories = [
+      {
+        num: '១',
+        titleKm: 'អ្នកមានកម្លាំងពលកម្ម+ពេលវេលា (ភ្នាក់ងារ សមាជិក សកម្ម និង អសកម្ម) ដែលលក់និងដឹកជញ្ជូនផ្ទាល់',
+        titleEn: '1. Labor + Time Contributors (Agents, Active & Inactive Members in Direct Sales & Delivery)',
+        detailKm: 'ចូលរួមដោយកម្លាំងពលកម្ម និងពេលវេលាផ្ទាល់ ក្នុងការលក់ ចែកចាយ និងដឹកជញ្ជូនផលិតផល-សេវាកម្ម ដោយប្រែក្លាយពេលវេលាទៅជាតម្លៃ។',
+        detailEn: 'Contribute time and hands-on labor in direct sales, distribution, and delivery across agents and active/inactive member tiers.'
+      },
+      {
+        num: '២',
+        titleKm: 'អ្នកមានចំណេះជំនាញ (គណនេយ្យ+បណ្ដុះបណ្ដាល+បច្ចេកវិទ្យា+បច្ចេកទេស)',
+        titleEn: '2. Skills & Expertise Contributors (Accounting + Training + Technology + Technical Skills)',
+        detailKm: 'រួមចំណែកតាមជំនាញវិជ្ជាជីវៈ គណនេយ្យ ការបណ្តុះបណ្តាល ប្រព័ន្ធបច្ចេកវិទ្យា និងបច្ចេកទេស ដើម្បីលើកកម្ពស់គុណភាព និងប្រសិទ្ធភាពប្រព័ន្ធ។',
+        detailEn: 'Contribute specialized expertise in accounting, training, technology, and technical operations to strengthen system standards.'
+      },
+      {
+        num: '៣',
+        titleKm: 'អ្នកមានធនធាន (ទ្រព្យសម្បត្តិ+ហិរញ្ញ។ល។)',
+        titleEn: '3. Capital & Asset Contributors (Assets, Finance, etc.)',
+        detailKm: 'រួមចំណែកទ្រព្យសម្បត្តិ ហិរញ្ញវត្ថុ និងធនធានផ្សេងៗ ក្រោមក្របខ័ណ្ឌគ្រប់គ្រងហានិភ័យ តម្លាភាព និងការវិនិយោគមានសុវត្ថិភាព។',
+        detailEn: 'Contribute financial resources and physical/digital assets under structured risk governance, transparency, and asset oversight.'
+      },
+      {
+        num: '៤',
+        titleKm: 'អ្នកមានបណ្ដាញទំនាក់ទំនង (ធនធានមនុស្ស+អាជីវកម្ម)',
+        titleEn: '4. Network & Connection Contributors (Human Capital + Business Connections)',
+        detailKm: 'ភ្ជាប់បណ្តាញធនធានមនុស្ស សហគមន៍ ស្ថាប័ន និងដៃគូអាជីវកម្ម ដើម្បីពង្រីកវិសាលភាពប្រព័ន្ធអេកូឡូស៊ីយ៉ាងទូលំទូលាយ។',
+        detailEn: 'Connect human talent networks, institutions, and business relationships to expand ecosystem reach and collaboration.'
+      },
+      {
+        num: '៥',
+        titleKm: 'អ្នកម្ចាស់អាជីវកម្ម (ម្ចាស់តូប+សិប្បកម្ម+សហគមន៍+សហគ្រាស+រោងចក្រ)',
+        titleEn: '5. Business Owners (Stalls + Handicrafts + Communities + Enterprises + Factories)',
+        detailKm: 'ដៃគូម្ចាស់តូប សិប្បកម្ម កសិកម្ម/សហគមន៍ សហគ្រាស SMEs និងរោងចក្រ ដែលផ្គត់ផ្គង់ផលិតផល-សេវាកម្ម និងរីកចម្រើនរួមគ្នា។',
+        detailEn: 'Partner business owners across stalls, handicrafts, communities, enterprises, and factories supplying goods and services.'
+      }
+    ];
+
+    function renderStaticLists() {
+      document.getElementById('missionListContainer').innerHTML = missionsData.map(m => `
+        <li class="flex items-center gap-2 bg-[#081020]/90 border border-slate-800 rounded-xl px-3 py-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+          <span>${currentLang === 'km' ? m.km : m.en}</span>
+        </li>
+      `).join('');
+
+      document.getElementById('tenPrinciplesGrid').innerHTML = tenPrinciples.map(p => `
+        <div class="bg-[#081020] border border-slate-800 hover:border-amber-400/45 rounded-2xl p-3.5 transition">
+          <span class="font-mono-code text-xs font-extrabold text-amber-400">PRINCIPLE ${p.num}</span>
+          <p class="text-xs sm:text-sm font-bold text-white mt-1 leading-snug">${currentLang === 'km' ? p.km : p.en}</p>
+        </div>
+      `).join('');
+
+      document.getElementById('coreDepartmentsList').innerHTML = fiveCoreDepartments.map(d => `
+        <li class="flex items-start gap-2 bg-[#081020] border border-slate-800/90 rounded-xl px-3 py-2">
+          <span class="text-emerald-400 font-bold">•</span>
+          <span>${currentLang === 'km' ? d.km : d.en}</span>
+        </li>
+      `).join('');
+
+      document.getElementById('rep8LevelsGrid').innerHTML = rep8Levels.map(r => `
+        <div class="bg-[#081020] border border-slate-800 rounded-xl px-3.5 py-2.5 flex items-center justify-between gap-2">
+          <div class="min-w-0">
+            <span class="font-mono-code text-[10px] font-bold text-amber-400">${r.code}</span>
+            <p class="text-xs font-bold text-white truncate">${currentLang === 'km' ? r.km : r.en}</p>
+          </div>
+          <span class="font-mono-code text-xs font-extrabold text-emerald-300 shrink-0">${r.scale}</span>
+        </div>
+      `).join('');
+
+      document.getElementById('fiveCapitalsGrid').innerHTML = fiveCapitals.map(c => `
+        <div class="glass-card rounded-2xl p-4 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 font-mono-code text-xs font-bold">${c.code}</span>
+            <h4 class="font-bold text-white text-sm mt-2">${currentLang === 'km' ? c.titleKm : c.titleEn}</h4>
+            <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">${currentLang === 'km' ? c.descKm : c.descEn}</p>
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('fiveParticipationGrid').innerHTML = fiveParticipationCategories.map(item => `
+        <div class="glass-card rounded-2xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="w-7 h-7 rounded-lg bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 font-bold text-xs flex items-center justify-center">
+                ${item.num}
+              </span>
+              <span class="font-mono-code text-[10px] text-amber-300 uppercase">PARTICIPATION TYPE</span>
+            </div>
+            <h4 class="font-bold text-white text-sm leading-snug">${currentLang === 'km' ? item.titleKm : item.titleEn}</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">${currentLang === 'km' ? item.detailKm : item.detailEn}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function populateProvinceSelect() {
+      const provSelect = document.getElementById('provinceSelect');
+      const prevVal = provSelect.value || nationwideData[0].id;
+      provSelect.innerHTML = nationwideData.map(p => `
+        <option value="${p.id}">${currentLang === 'km' ? p.provKm : p.provEn}</option>
+      `).join('');
+      provSelect.value = prevVal;
+      populateDistrictSelect();
+    }
+
+    function populateDistrictSelect() {
+      const provId = document.getElementById('provinceSelect').value;
+      const prov = nationwideData.find(p => p.id === provId) || nationwideData[0];
+      const distSelect = document.getElementById('districtSelect');
+      distSelect.innerHTML = prov.districts.map((d, idx) => `
+        <option value="${idx}">${currentLang === 'km' ? d.nameKm : d.nameEn}</option>
+      `).join('');
+      distSelect.value = '0';
+      updateNationwideNetwork();
+    }
+
+    function updateNationwideNetwork() {
+      const provId = document.getElementById('provinceSelect').value;
+      const prov = nationwideData.find(p => p.id === provId) || nationwideData[0];
+      const distIdx = Number(document.getElementById('districtSelect').value || 0);
+      const dist = prov.districts[distIdx] || prov.districts[0];
+
+      const summaryEl = document.getElementById('geoNetworkSummaryCard');
+      if (currentLang === 'km') {
+        summaryEl.innerHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div>
+              <p class="text-xs text-amber-300 font-bold">${prov.provKm} • ${dist.nameKm}</p>
+              <p class="text-[11px] text-slate-400">ឃុំ/សង្កាត់សរុបក្នុងខេត្ត-រាជធានី៖ <strong class="text-white">${prov.communesTotal}</strong></p>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-300 font-mono-code text-xs font-bold">
+              Active ${dist.active}
+            </span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="bg-[#0d1629] rounded-xl p-3 border border-slate-800">
+              <p class="text-slate-400">សមាជិកក្នុងស្រុក/ខណ្ឌនេះ</p>
+              <p class="text-lg font-extrabold text-amber-300 font-mono-code mt-0.5">${dist.members}</p>
+            </div>
+            <div class="bg-[#0d1629] rounded-xl p-3 border border-slate-800">
+              <p class="text-slate-400">សមាជិកប៉ាន់ស្មានទាំងខេត្ត</p>
+              <p class="text-lg font-extrabold text-emerald-300 font-mono-code mt-0.5">${prov.membersEst}</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-[11px] text-slate-400 mb-1.5">ឧទាហរណ៍បណ្តាញឃុំ / សង្កាត់៖</p>
+            <div class="flex flex-wrap gap-1.5">
+              ${dist.communes.map(c => `<span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-slate-200 text-xs border border-slate-700">${c}</span>`).join('')}
+            </div>
+          </div>
+        `;
+      } else {
+        summaryEl.innerHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+            <div>
+              <p class="text-xs text-amber-300 font-bold">${prov.provEn} • ${dist.nameEn}</p>
+              <p class="text-[11px] text-slate-400">Provincial/Capital Communes & Sangkats: <strong class="text-white">${prov.communesTotal}</strong></p>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-300 font-mono-code text-xs font-bold">
+              Active ${dist.active}
+            </span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="bg-[#0d1629] rounded-xl p-3 border border-slate-800">
+              <p class="text-slate-400">District/Khan Members</p>
+              <p class="text-lg font-extrabold text-amber-300 font-mono-code mt-0.5">${dist.members}</p>
+            </div>
+            <div class="bg-[#0d1629] rounded-xl p-3 border border-slate-800">
+              <p class="text-slate-400">Province/Capital Members</p>
+              <p class="text-lg font-extrabold text-emerald-300 font-mono-code mt-0.5">${prov.membersEst}</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-[11px] text-slate-400 mb-1.5">Sample Communes / Sangkats:</p>
+            <div class="flex flex-wrap gap-1.5">
+              ${dist.communes.map(c => `<span class="px-2.5 py-1 rounded-lg bg-slate-800/90 text-slate-200 text-xs border border-slate-700">${c}</span>`).join('')}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function setExplorerTab(tabId) {
+      currentExplorerTab = tabId;
+      ['about-pillars', 'gov-nationwide', 'capitals-roles', 'roadmap-principles'].forEach(id => {
+        const btn = document.getElementById('tab-' + id);
+        if (id === tabId) btn.classList.add('pillar-tab-active');
+        else btn.classList.remove('pillar-tab-active');
+      });
+      renderExplorerPanel();
+    }
+
+    function renderExplorerPanel() {
+      const panel = document.getElementById('explorerPanel');
+
+      if (currentExplorerTab === 'about-pillars') {
+        panel.innerHTML = currentLang === 'km' ? `
+          <div class="space-y-4">
+            <h3 class="text-lg font-extrabold text-amber-300">សសរស្តម្ភអំពីបណ្តាញមហាសិរី (Mohaserei Network)</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              MSN ភ្ជាប់ប្រព័ន្ធ Core Member & Point System (V1.0) ជាមួយនឹង Mohaserei Network and Ecosystem (2027–2052) និង MSN System Update (2026–2052) ដើម្បីឱ្យសមាជិកគ្រប់រូបអាចសន្សំ វិនិយោគ និងទទួលផលត្រឡប់វិញដោយផ្អែកលើការចូលរួមពិតប្រាកដ។
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4">
+                <p class="font-mono-code text-xs text-emerald-400 font-bold">V1.0 CORE SYSTEM</p>
+                <h4 class="font-bold text-white text-sm mt-1">Member & Point Foundation</h4>
+                <p class="text-xs text-slate-400 mt-1.5">កំណត់អត្តសញ្ញាណសមាជិក ប្រព័ន្ធពិន្ទុ និងកំណត់ត្រាការចូលរួមជាមូលដ្ឋាន។</p>
+              </div>
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4">
+                <p class="font-mono-code text-xs text-amber-400 font-bold">2027–2052 ECOSYSTEM</p>
+                <h4 class="font-bold text-white text-sm mt-1">National Cooperative Economy</h4>
+                <p class="text-xs text-slate-400 mt-1.5">ពង្រីកបណ្តាញសមាជិក ដៃគូអាជីវកម្ម កសិកម្ម ផលិតកម្ម និងវិនិយោគទូទាំងប្រទេស។</p>
+              </div>
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4">
+                <p class="font-mono-code text-xs text-teal-300 font-bold">2026–2052 SYSTEM UPDATE</p>
+                <h4 class="font-bold text-white text-sm mt-1">Enterprise Governance & Audit</h4>
+                <p class="text-xs text-slate-400 mt-1.5">ពង្រឹងអភិបាលកិច្ច ការគ្រប់គ្រងហានិភ័យ ការការពារទិន្នន័យ និងសវនកម្មស្តង់ដារ។</p>
+              </div>
+            </div>
+          </div>
+        ` : `
+          <div class="space-y-4">
+            <h3 class="text-lg font-extrabold text-amber-300">Core Pillars of Mohaserei Network (MSN)</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              MSN unites the Core Member & Point System (V1.0), Mohaserei Network and Ecosystem (2027–2052), and MSN System Update (2026–2052) so members can save, invest, and receive returns grounded in verified participation.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4">
+                <p class="font-mono-code text-xs text-emerald-400 font-bold">V1.0 CORE SYSTEM</p>
+                <h4 class="font-bold text-white text-sm mt-1">Member & Point Foundation</h4>
+                <p class="text-xs text-slate-400 mt-1.5">Establishes member identity, point scoring rules, and auditable participation tracking.</p>
+              </div>
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4">
+                <p class="font-mono-code text-xs text-amber-400 font-bold">2027–2052 ECOSYSTEM</p>
+                <h4 class="font-bold text-white text-sm mt-1">National Cooperative Economy</h4>
+                <p class="text-xs text-slate-400 mt-1.5">Scales nationwide members, business partners, agriculture, production, and investments.</p>
+              </div>
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4">
+                <p class="font-mono-code text-xs text-teal-300 font-bold">2026–2052 SYSTEM UPDATE</p>
+                <h4 class="font-bold text-white text-sm mt-1">Enterprise Governance & Audit</h4>
+                <p class="text-xs text-slate-400 mt-1.5">Reinforces institutional governance, risk controls, data privacy, and audit compliance.</p>
+              </div>
+            </div>
+          </div>
+        `;
+      } else if (currentExplorerTab === 'gov-nationwide') {
+        panel.innerHTML = currentLang === 'km' ? `
+          <div class="space-y-4">
+            <h3 class="text-lg font-extrabold text-emerald-300">អភិបាលកិច្ច និងការគ្របដណ្តប់បណ្តាញទូទាំងប្រទេស</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              ក្រុមប្រឹក្សាភិបាល គណៈកម្មាធិការប្រតិបត្តិ និងនាយកដ្ឋានស្នូលទាំង ៥ (សវនកម្ម គ្រប់គ្រងនិងភាពជាអ្នកដឹកនាំ វិន័យ អភិវឌ្ឍន៍និងហិរញ្ញវត្ថុ បណ្តុះបណ្តាល) ដំណើរការជាប់គ្នាពីក្រុម ៣០ នាក់ រហូតដល់ថ្នាក់ជាតិ ១,០០០,០០០+ នៅគ្រប់ខេត្ត រាជធានី ស្រុក/ខណ្ឌ ឃុំ សង្កាត់។
+            </p>
+          </div>
+        ` : `
+          <div class="space-y-4">
+            <h3 class="text-lg font-extrabold text-emerald-300">Governance & Nationwide Network Coverage</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              The Board of Directors, Executive Committee, and 5 Core Departments (Audit, Management & Leadership, Discipline, Development & Finance, and Training) align from Team 30 up to National 1,000,000+ across Provinces/Municipalities, Districts/Khans, and Communes/Sangkats.
+            </p>
+          </div>
+        `;
+      } else if (currentExplorerTab === 'capitals-roles') {
+        panel.innerHTML = currentLang === 'km' ? `
+          <div class="space-y-4">
+            <h3 class="text-lg font-extrabold text-amber-300">ធនធាន ៥ និងប្រភេទចូលរួម ៥ ក្នុង MSN</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              សមាជិកអាចចូលរួមតាមរយៈ (១) កម្លាំងពលកម្ម+ពេលវេលា (ភ្នាក់ងារ សមាជិក សកម្ម និងអសកម្ម លក់និងដឹកជញ្ជូនផ្ទាល់) (២) ចំណេះជំនាញ (គណនេយ្យ បណ្តុះបណ្តាល បច្ចេកវិទ្យា បច្ចេកទេស) (៣) ធនធាន (ទ្រព្យសម្បត្តិ ហិរញ្ញវត្ថុ។ល។) (៤) បណ្តាញទំនាក់ទំនង (ធនធានមនុស្ស អាជីវកម្ម) និង (៥) ម្ចាស់អាជីវកម្ម (តូប សិប្បកម្ម សហគមន៍ សហគ្រាស រោងចក្រ)។
+            </p>
+          </div>
+        ` : `
+          <div class="space-y-4">
+            <h3 class="text-lg font-extrabold text-amber-300">5 Capitals & 5 Participation Categories in MSN</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Members participate through (1) Labor + Time (agents, active & inactive members in direct sales & delivery), (2) Skills & Expertise (accounting, training, technology, technical), (3) Capital & Assets (assets, finance, etc.), (4) Network & Connections (human capital & business), and (5) Business Owners (stalls, handicrafts, communities, enterprises, factories).
+            </p>
+          </div>
+        `;
+      } else {
+        panel.innerHTML = currentLang === 'km' ? `
+          <div class="space-y-5">
+            <h3 class="text-lg font-extrabold text-amber-300">ផែនទីបង្ហាញផ្លូវ ២០២៦–២០៥២ និងគោលការណ៍ប្រតិបត្តិការស្នូល</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 space-y-2">
+                <span class="font-mono-code text-xs text-emerald-400 font-bold">SAVE • INVEST • RETURN & WALLET</span>
+                <h4 class="font-bold text-white text-sm">Multi-Pocket E-Wallet & វដ្តប្រតិបត្តិការ ៦ ខែ (Semi-Annual)</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  គ្រប់គ្រងសមតុល្យច្បាស់លាស់តាមហោប៉ៅ (Multi-Pocket E-Wallet) ជាមួយវដ្តដក/ទូទាត់ប្រចាំ ៦ ខែ (Semi-Annual 6-Month Withdrawal Cycle) និងលក្ខខណ្ឌតម្លាភាព។
+                </p>
+              </div>
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 space-y-2">
+                <span class="font-mono-code text-xs text-amber-400 font-bold">RISK, PRIVACY & 2026–2052 PHASES</span>
+                <h4 class="font-bold text-white text-sm">អភិបាលកិច្ចហានិភ័យ ភាពឯកជន និងកំណើនដល់ ១០ លាន+ នាក់</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  ការពារទិន្នន័យផ្ទាល់ខ្លួន គ្រប់គ្រងហានិភ័យជាប្រព័ន្ធ និងពង្រីកដំណាក់កាលពី 2026–2028 (Foundation) ដល់ 2045–2052 (10,000,000+ Members, 780,000+ Partners, $6B Scale)។
+                </p>
+              </div>
+            </div>
+          </div>
+        ` : `
+          <div class="space-y-5">
+            <h3 class="text-lg font-extrabold text-amber-300">2026–2052 Roadmap & Core Operating Principles</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 space-y-2">
+                <span class="font-mono-code text-xs text-emerald-400 font-bold">SAVE • INVEST • RETURN & WALLET</span>
+                <h4 class="font-bold text-white text-sm">Multi-Pocket E-Wallet & Semi-Annual 6-Month Withdrawal Cycle</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Structured Multi-Pocket E-Wallet tracking paired with a disciplined Semi-Annual 6-Month Withdrawal Cycle and clear participation rules.
+                </p>
+              </div>
+              <div class="bg-[#081020] border border-slate-800 rounded-2xl p-4 space-y-2">
+                <span class="font-mono-code text-xs text-amber-400 font-bold">RISK, PRIVACY & 2026–2052 PHASES</span>
+                <h4 class="font-bold text-white text-sm">Risk & Privacy Governance and 2026–2052 Growth</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                  Enforces data privacy and risk controls across phases from 2026–2028 (Foundation) through 2045–2052 (10,000,000+ members, 780,000+ partners, $6B projection).
+                </p>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function applyTranslations() {
+      document.documentElement.lang = currentLang;
+      document.getElementById('langToggleLabel').textContent = currentLang === 'km' ? 'English' : 'ភាសាខ្មែរ';
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dictionary[currentLang] && dictionary[currentLang][key]) {
+          el.textContent = dictionary[currentLang][key];
+        }
+      });
+
+      renderStaticLists();
+      populateProvinceSelect();
+      renderExplorerPanel();
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'km' ? 'en' : 'km';
+      applyTranslations();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      applyTranslations();
+    });
+  </script>
+</body>
+</html>
